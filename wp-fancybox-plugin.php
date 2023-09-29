@@ -93,7 +93,7 @@ class FancyBox{
         <script>
             jQuery(document).ready(function($){
 
-                console.log('<?= defined('WP_DEBUG') && WP_DEBUG ? 'WP FancyBox included' : '';?>');
+                <?= defined('WP_DEBUG') && WP_DEBUG ? "console.log('WP FancyBox included');" : ''; ?>
 
                 $("<?= esc_attr($this->settings['selector']); ?>").each( function() {
 
