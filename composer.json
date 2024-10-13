@@ -3,6 +3,7 @@
   "description": "This WordPress plugin enable support fancybox js for posts.",
   "minimum-stability": "stable",
   "license": "proprietary",
+  "type": "wordpress-plugin",
   "authors": [
     {
       "name": "Aleksei Tikhomirov",
