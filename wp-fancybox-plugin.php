@@ -73,8 +73,8 @@ class FancyBox{
             if('plugin' === $this->settings['path']){
                 $path = plugin_dir_url( __FILE__ );
             }
-            wp_enqueue_script( 'jquery.fancybox', $path . '/assets/fancybox.js','jquery', '1.0.0',true);
-            wp_enqueue_style( 'jquery.fancybox', $path . '/assets/fancybox.css', false, '1.0.0' );
+            wp_enqueue_script( 'jquery.fancybox', $path . 'assets/fancybox.js','jquery', '1.0.0',true);
+            wp_enqueue_style( 'jquery.fancybox', $path . 'assets/fancybox.css', false, '1.0.0' );
 
             if('yes' === $this->settings['inline']){
                 $inline_js = str_replace(['<script>','</script>'], '', $this->footer(true));
